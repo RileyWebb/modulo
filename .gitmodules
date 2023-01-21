@@ -1,0 +1,10 @@
+[submodule "ext/glfw"]
+	path = ext/glfw
+	url = https://github.com/glfw/glfw
+	tag = 3.3.8
+[submodule "ext/libtcc"]
+	path = ext/libtcc
+	url = https://github.com/Alex2804/libtcc-cmake
+[submodule "ext/libyaml"]
+	path = ext/libyaml
+	url = https://github.com/yaml/libyaml

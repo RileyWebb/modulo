@@ -1,13 +1,15 @@
 #include <stdio.h>
-#define SDL_MAIN_HANDLED
-#include <SDL.h>
+#include <GLFW/glfw3.h>
 
-#include <libtcc.h>
+#include "tcc/libtcc.h"
+#include "resource.h"
 
 int main(int argc, char** argv) {
     printf("Hello, World!\n");
-    SDL_SetMainReady();
-    SDL_Init(SDL_INIT_EVERYTHING);
+
+    load_manifest("include");
+
+    glfwInit();
 
     TCCState *s;
 
